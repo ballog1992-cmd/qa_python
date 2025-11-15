@@ -181,7 +181,7 @@ class TestBooksCollector:
         assert collector.get_list_of_favorites_books() == []
 
 
-    # Проверка удаления несуществующей книги из избранного
+    # Проверка удаления несуществующей книги из избранного 
 
     def test_delete_book_from_favorites_ignores_nonexistent_favorite(self, collector):
 
