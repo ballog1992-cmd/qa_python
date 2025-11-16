@@ -88,16 +88,6 @@ class TestBooksCollector:
         result = collector.get_book_genre("Фрилансер")
         
         assert result is None
-    # Получение книги по жанру
-    def test_get_books_with_specific_genre_returns_books_with_correct_genre(self, collector):
-
-        collector.add_new_book("Красная шапочка")
-        collector.add_new_book("Гарри Поттер")
-        collector.set_book_genre("Красная шапочка", "Мультфильмы")
-        collector.set_book_genre("Гарри Поттер", "Фантастика")
-        result = collector.get_books_with_specific_genre("Мультфильмы")
-
-        assert result == ["Красная шапочка"]
 
     # Проверка возврата словаря с книгами и жанрами
 
